@@ -1,4 +1,69 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: silver;
+    font-size: 3rem;
+    margin-top: 0;
+}
 
+.calculator__wrapper {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.propeties__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.propeties__wrapper .propeties__item{
+    margin: 0.5rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+.propeties__wrapper .propeties__item #rate{
+    width: 75%;
+    margin-right: 0.5rem;
+}
+
+.propeties__item__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#rate-number{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+button{
+    margin: 1rem 0;
+}
+
+p{
+    margin: 0.25rem 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
