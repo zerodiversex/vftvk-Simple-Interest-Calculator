@@ -10,6 +10,10 @@ let resultResult = document.querySelector("#result-result")
 
 function compute()
 {
+    if(p.value === undefined && Number(p.value) <= 0){
+        alert("You must enter a positive value!")
+        p.focus = true
+    }
     resultPricipale.innerHTML = p.value
     resultRate.innerHTML = r.value
     resultYear.innerHTML = (new Date()).getFullYear() + Number(y.value)
